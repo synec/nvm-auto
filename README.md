@@ -50,6 +50,7 @@ source ~/.zshrc
 For the less impatient:
 
  1. Ensure you have nvm >=0.30 installed properly.
+ 1. Make sure you have set the `default` alias for nvm: e.g.: `nvm set default 5.9.0`
  1. Have `oh-my-zsh` installed (D'uh!)
  1. Open a terminal and navigate to your `~/.oh-my-zsh/custom/plugins` folder.
  1. Clone this repository to that folder.
