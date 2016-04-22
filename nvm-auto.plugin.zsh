@@ -16,8 +16,8 @@ function nvm_auto_switch() {
 }
 
 function nvm_auto_version {
-  echo v0.0.1
+  echo v0.0.2
 }
 
 autoload -U add-zsh-hook
-add-zsh-hook precmd nvm_auto_switch
+add-zsh-hook chpwd nvm_auto_switch
