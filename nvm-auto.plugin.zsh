@@ -1,5 +1,5 @@
 # Switch node version using nvm if the need arises
-function nvm_auto_switch() {
+function nvm_auto_switch {
   unset NVM_RC_VERSION
   CUR_VERSION=$(node -v |cut -c 2-)
   nvm_rc_version > /dev/null 2>&1
@@ -16,8 +16,9 @@ function nvm_auto_switch() {
 }
 
 function nvm_auto_version {
-  echo v0.0.2
+  echo v1.0.0
 }
+
 
 autoload -U add-zsh-hook
 add-zsh-hook chpwd nvm_auto_switch
